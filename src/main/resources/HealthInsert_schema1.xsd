@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://health.realtime.co.ir/" xmlns:tns="http://health.realtime.co.ir/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="put" type="tns:put"/>
+
+  <xs:element name="putResponse" type="tns:putResponse"/>
+
+  <xs:complexType name="put">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="putResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
